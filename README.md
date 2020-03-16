@@ -83,7 +83,7 @@ MobSDK {
  
  SMSSDK.getVerificationCode("86", et_phone.text.toString())  // 根据手机号码et_phone，发送验证码信息到此手机号[这个地方有几个重载的方法 注意搭配使用]
  
- SMSSDK.submitVerificationCode("86", et_phone.text.toString(), et_verify.text.toString()); // 根据手机号码和收到的验证码，发送验证结果回调，注意 这个地方有事件限制60s
+ SMSSDK.submitVerificationCode("86", et_phone.text.toString(), et_verify.text.toString()); // 根据手机号码和收到的验证码，发送验证结果回调，注意 这个地方有时间限制60s
 
 #### 4. 注意混淆保护
 
