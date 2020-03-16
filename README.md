@@ -28,28 +28,20 @@
   
 #####  3.1 app下的build.gradle添加：
 
-<code>
-	
-// 添加插件
-
-apply plugin: 'com.mob.sdk'
-
-// 在MobSDK的扩展中注册SMSSDK的相关信息
-
-MobSDK {
-
-    appKey "2e6742e634d90"
-    
-    appSecret "c4554e755455202a79e5660da7a458f2"
-
-    SMSSDK {
-            //默认使用GUI，若不使用GUI，通过以下开关关闭
-            //gui false
-            //若使用GUI的自动填充验证码功能，需打开此设置
-            //autoSMS true     
-           }
-       }
-       
+<code>  
+// 添加插件  
+apply plugin: 'com.mob.sdk'  
+// 在MobSDK的扩展中注册SMSSDK的相关信息    
+MobSDK {  
+    appKey "2e6742e634d90"  
+    appSecret "c4554e755455202a79e5660da7a458f2"  
+    SMSSDK {   
+            //默认使用GUI，若不使用GUI，通过以下开关关闭  
+            //gui false  
+            //若使用GUI的自动填充验证码功能，需打开此设置  
+            //autoSMS true  
+           }  
+       }  
 </code>
 
 #####  3.2 事件回调
@@ -88,9 +80,9 @@ MobSDK {
 
 #### 4. 注意混淆保护
 
--keep class com.mob.**{*;}
--keep class cn.smssdk.**{*;}
--dontwarn com.mob.**
+-keep class com.mob.**{*;}  
+-keep class cn.smssdk.**{*;}  
+-dontwarn com.mob.**  
 
 
 ------------------------------------------------
