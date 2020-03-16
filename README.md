@@ -29,12 +29,19 @@
 #####  3.1 app下的build.gradle添加：
 
 <code>  
+	
 // 添加插件  
+	
 apply plugin: 'com.mob.sdk'  
+
 // 在MobSDK的扩展中注册SMSSDK的相关信息    
+
 MobSDK {  
+
     appKey "2e6742e634d90"  
+    
     appSecret "c4554e755455202a79e5660da7a458f2"  
+    
     SMSSDK {   
             //默认使用GUI，若不使用GUI，通过以下开关关闭  
             //gui false  
